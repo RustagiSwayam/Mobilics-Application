@@ -27,8 +27,7 @@ struct ContentView: View {
             }
         }
     }
-    
-    // Function to get image name based on information
+
     func getImageName(for information: String) -> String {
         switch information {
         case "Model Name":
