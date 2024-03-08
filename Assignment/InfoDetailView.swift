@@ -13,11 +13,11 @@ struct InfoDetailView: View {
             case "Model Name":
                 VStack{
                     Spacer()
-                    Text("You currently have a \("iPhone 12")")
+                    Text("You currently have a \(device.name)")
                     Spacer()
                 }
             case "Model Number":
-                Text("Model Number: \("MGJA3HN/A")")
+                Text("Model Number: \(device.model)")
             case "iOS Version":
                 VStack{
                     Spacer()
@@ -48,7 +48,7 @@ struct InfoDetailView: View {
                 Text("Your phone can capture videos and photos in \(getCameraMegapixel())")
                     .padding()
             case "Camera Aperture":
-                // Access camera information if available
+                
                 VStack{
                     Spacer()
                     Text("\(getCameraAperture())")
