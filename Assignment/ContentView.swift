@@ -13,7 +13,6 @@ struct ContentView: View {
                     NavigationLink(destination: InfoDetailView(information: information)){
                         VStack{
                             HStack{
-                                // Replacing system images with appropriate symbols
                                 Image(systemName: self.getImageName(for: information))
                                 Text(information)
                                     .font(.title)
